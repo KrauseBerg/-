@@ -112,11 +112,6 @@ void calculator::c_plus(){
     QString text1=ui->line1->text();
     if(text1.endsWith("+")!=true)
         ui->line1->insert(button->text());
-    if(text1.endsWith("=")==true){
-        text1.chop(1);
-        ui->line1->setText(text1);
-        ui->line1->insert(button->text());
-    }
     if(text1.endsWith("-")==true){
         text1.chop(1);
         ui->line1->setText(text1);
@@ -181,11 +176,6 @@ void calculator::c_minus(){
     QString text1=ui->line1->text();
     if(text1.endsWith("-")!=true)
         ui->line1->insert(button->text());
-    if(text1.endsWith("=")==true){
-        text1.chop(1);
-        ui->line1->setText(text1);
-        ui->line1->insert(button->text());
-    }
     if(text1.endsWith("+")==true){
         text1.chop(1);
         ui->line1->setText(text1);
@@ -230,11 +220,6 @@ void calculator::c_delit(){
     QString text1=ui->line1->text();
     if(text1.endsWith("/")!=true)
         ui->line1->insert(button->text());
-    if(text1.endsWith("=")==true){
-        text1.chop(1);
-        ui->line1->setText(text1);
-        ui->line1->insert(button->text());
-    }
     if(text1.endsWith("-")==true){
         text1.chop(1);
         ui->line1->setText(text1);
@@ -279,11 +264,6 @@ void calculator::c_star(){
     QString text1=ui->line1->text();
     if(text1.endsWith("*")!=true)
         ui->line1->insert(button->text());
-    if(text1.endsWith("=")==true){
-        text1.chop(1);
-        ui->line1->setText(text1);
-        ui->line1->insert(button->text());
-    }
     if(text1.endsWith("-")==true){
         text1.chop(1);
         ui->line1->setText(text1);
